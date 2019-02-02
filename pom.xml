@@ -26,10 +26,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 		</dependency>
@@ -63,6 +59,22 @@
 			<artifactId>sentinel-core</artifactId>
 			<version>0.1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.yss.log</groupId>
+			<artifactId>yss-base-log-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
