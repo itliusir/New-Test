@@ -8,17 +8,38 @@ package com.itliusir.test.thread;
  */
 public class TestThread {
 
-    public static void main(String[] args) {
-        Thread1 t1 = new Thread1("thread-1");
+    public static int i = 0;
+
+    public static void main(String[] args) throws InterruptedException {
+        /*Thread1 t1 = new Thread1("thread-1");
         Thread2 t2 = new Thread2("thread-2");
         new Thread(t1).start();
-        new Thread(t2).start();
+        new Thread(t2).start();*/
+
+        new Thread() {
+            @Override
+            public void run() {
+                System.out.println("xxx");
+                new TestThread().add();
+            }
+        }.start();
+
+        Thread.sleep(1000);
+
+        new TestThread().add();
+        System.out.println(i);
     }
 
+    public void add() {
+        synchronized (this) {
+            i++;
+        }
+    }
 
 
 }
 
+/*
 class Thread1 implements Runnable {
     private String name;
 
@@ -42,7 +63,7 @@ class Thread2 implements Runnable {
     @Override
     public void run() {
         String str = User.name;
-        if(str.equals("/tmp")) {
+        if (str.equals("/tmp")) {
             System.out.println(str);
         }
         System.out.println(str);
@@ -52,3 +73,4 @@ class Thread2 implements Runnable {
 class User {
     public static String name = "/tmp";
 }
+*/
