@@ -9,7 +9,7 @@ import java.util.Collections;
  * @author liugang
  * @since 2018/9/7
  */
-public class Test {
+public class TestMergeSort {
 
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 7, 9};

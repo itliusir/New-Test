@@ -9,7 +9,7 @@ import java.util.List;
  * @author liugang
  * @since 2018/9/7
  */
-public class Test {
+public class TestTopK {
 
     public static void main(String[] args) {
         int[] array = {4, 9, 9, 3, 3, 3, 2, 2, 8, 8};

@@ -30,7 +30,7 @@ public class TestSynchronized {
             @Override
             public void run() {
                 try {
-                    pri1.case3();
+                    pri1.case4();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -41,7 +41,7 @@ public class TestSynchronized {
             @Override
             public void run() {
                 try {
-                    pri2.case3();
+                    pri2.case4();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -69,5 +69,25 @@ public class TestSynchronized {
             log.info("我是case3");
             Thread.sleep(5000);
         }
+    }
+
+    public void case4() throws InterruptedException {
+        log.info(Thread.currentThread() + "-------------------1");
+        log.info(Thread.currentThread() + "-------------------2");
+        log.info(Thread.currentThread() + "-------------------3");
+        log.info(Thread.currentThread() + "-------------------4");
+        log.info(Thread.currentThread() + "-------------------5");
+        log.info(Thread.currentThread() + "-------------------6");
+        log.info(Thread.currentThread() + "-------------------7");
+        log.info(Thread.currentThread() + "-------------------8");
+        log.info(Thread.currentThread() + "-------------------9");
+        log.info(Thread.currentThread() + "-------------------10");
+        log.info(Thread.currentThread() + "-------------------11");
+        log.info(Thread.currentThread() + "-------------------12");
+        log.info(Thread.currentThread() + "-------------------13");
+        log.info(Thread.currentThread() + "-------------------14");
+        log.info(Thread.currentThread() + "-------------------15");
+
+
     }
 }

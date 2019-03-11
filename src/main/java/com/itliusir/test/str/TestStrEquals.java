@@ -14,7 +14,7 @@ public class TestStrEquals {
     public static void main(String[] args) {
         /*String x = "StringTest";
         log.info("x-----adr{}" ,String.valueOf(x.hashCode()));
-        String s1 = new StringBuilder().append("String").append("Test").toString();
+        String s1 = new StringBuilder().append("String").append("TestTopK").toString();
         log.info("s1.intern()-----adr{}" ,String.valueOf(s1.intern().hashCode()));
         log.info("s1-----adr{}" ,String.valueOf(s1.hashCode()));
         System.out.println(s1.intern() == s1);

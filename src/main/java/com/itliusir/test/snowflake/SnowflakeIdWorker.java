@@ -133,7 +133,7 @@ public class SnowflakeIdWorker {
         return System.currentTimeMillis();
     }
 
-    //==============================Test=============================================
+    //==============================TestTopK=============================================
     /** 测试 */
     public static void main(String[] args) {
         SnowflakeIdWorker idWorker = new SnowflakeIdWorker(0, 0);
