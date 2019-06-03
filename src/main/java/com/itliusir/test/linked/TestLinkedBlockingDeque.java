@@ -2,9 +2,7 @@ package com.itliusir.test.linked;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.BlockingDeque;
-import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * 双向并发阻塞队列

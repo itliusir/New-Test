@@ -1,0 +1,6 @@
+custom:
+  specialTask:
+    - taskId: 1657
+      machineNum: 30
+    - taskId: 1658
+      machineNum: 10

@@ -1,6 +1,8 @@
 package com.itliusir.test.jdk8.lambda.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
@@ -10,6 +12,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * @since 2018-05-04
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     private Integer id;

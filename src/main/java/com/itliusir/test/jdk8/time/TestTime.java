@@ -26,10 +26,11 @@ public class TestTime {
         Date date = Date.from(lct.atZone(ZoneId.systemDefault()).toInstant());
         System.out.println(lct);*/
 
-        LocalDateTime lct = LocalDateTime.now().withHour(19).withMinute(0).withSecond(0).withNano(0);
+        LocalDateTime lct = LocalDateTime.now().withHour(23).withMinute(59).withSecond(0).withNano(0);
+        LocalDateTime lct2 = LocalDateTime.now().withHour(23).withMinute(58).withSecond(0).withNano(0);
         Date date = Date.from(lct.atZone(ZoneId.systemDefault()).toInstant());
-        System.out.println(date);
-
+        Date nowDate = Date.from(lct2.atZone(ZoneId.systemDefault()).toInstant());
+        System.out.println(date.getTime() / 1000 - nowDate.getTime() / 1000);
         /*LocalDate ld = LocalDate.now();
         System.out.println(ld.toString());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
